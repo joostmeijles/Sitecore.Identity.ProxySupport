@@ -1,6 +1,6 @@
 ﻿# Sitecore Identity reverse-proxy support
 By default Sitecore Identity Server 9.1 does not support reverse-proxy forwarding.
-See: https://sitecore.stackexchange.com/questions/20841/identity-server-behind-reverse-proxy-not-reachable-by-cm
+See [this](https://sitecore.stackexchange.com/questions/20841/identity-server-behind-reverse-proxy-not-reachable-by-cm) question at Sitecore Stack Exchange for details.
 
 This plugin adds reverse-proxy support for the Sitecore Identity Server. It does this by injecting a small piece of ASP.NET Core middleware and by adding a `PublicOrigin` configuration option.
 
