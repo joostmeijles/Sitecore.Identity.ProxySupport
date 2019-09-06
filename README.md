@@ -31,4 +31,4 @@ https://doc.sitecore.com/developers/91/sitecore-experience-management/en/add-a-r
 > NB. When you apply steps don't forget to stop the `w3wp` process
 
 # Credits
-Special thanks to [Per Bering](https://github.com/pbering) for providing the code for this solution
+Special thanks to [Per Bering](https://github.com/pbering) for providing the code for this solution.
