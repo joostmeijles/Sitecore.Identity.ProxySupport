@@ -1,6 +1,11 @@
-﻿This plugin adds reverse-proxy support for the Sitecore Identity Server.
+﻿# Sitecore Identity reverse-proxy support
+By default Sitecore Identity Server 9.1 does not support reverse-proxy forwarding.
+See: https://sitecore.stackexchange.com/questions/20841/identity-server-behind-reverse-proxy-not-reachable-by-cm
 
-To enable it;
+This plugin adds reverse-proxy support for the Sitecore Identity Server. It does this by injecting a small piece of ASP.NET Core middleware and by adding a `PublicOrigin` configuration option.
+
+# Applying the solution
+To apply the solution:
 - Build the project
 - Copy the Sitecore.Identity.ProxySupport.dll assembly to `C:\inetpub\wwwroot\identity\sitecoreruntime\production`
 - Copy `Sitecore.Plugin.manifest` and `Config/` directory to `C:\inetpub\wwwroot\identity\sitecoreruntime\production\sitecore`
@@ -17,10 +22,13 @@ To enable it;
   </Tags>
 </SitecorePlugin>
 ```
-- Configure the `PublicOrigin` in `proxysupport.xml`
+- Configure the `PublicOrigin` in `config/proxysupport.xml`
 
 
 The above follows the standard way of working for a Sitecore Host plugin as defined here:
 https://doc.sitecore.com/developers/91/sitecore-experience-management/en/add-a-runtime-plugin-manually.html
 
-NB. When you do this don't forget to stop the `w3wp` process
+> NB. When you apply steps don't forget to stop the `w3wp` process
+
+# Credits
+Special thanks to [Per Bering](https://github.com/pbering) for providing the code for this solution
