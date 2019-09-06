@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Settings>
+  <Sitecore>
+    <ProxySupport>
+		  <PublicOrigin>https://identity.xc9-k8s.rocks</PublicOrigin>
+	  </ProxySupport>
+  </Sitecore>
+</Settings>

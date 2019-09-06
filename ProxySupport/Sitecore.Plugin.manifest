@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SitecorePlugin PluginName="Sitecore.Identity.ProxySupport" AssemblyName="Sitecore.Identity.ProxySupport" Version="1.0">
+  <Dependencies />
+</SitecorePlugin>
