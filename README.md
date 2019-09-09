@@ -8,7 +8,7 @@ This plugin adds reverse-proxy support for the Sitecore Identity Server. It does
 To apply the solution:
 - Build the project
 - Copy the Sitecore.Identity.ProxySupport.dll assembly to `C:\inetpub\wwwroot\identity\sitecoreruntime\production`
-- Copy `Sitecore.Plugin.manifest` and `Config/` directory to `C:\inetpub\wwwroot\identity\sitecoreruntime\production\sitecore`
+- Copy `Sitecore.Plugin.manifest` and `Config/` directory to `C:\inetpub\wwwroot\identity\sitecoreruntime\production\sitecore\Sitecore.Identity.ProxySupport\`
 - As plugin load order is import, add `Sitecore.Identity.ProxySupport` as dependency to `C:\inetpub\wwwroot\identity\sitecore\Sitecore.Plugin.IdentityServer\Sitecore.Plugin.manifest`, e.g:
 ```
 <?xml version="1.0" encoding="utf-8"?>
